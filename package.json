@@ -1,0 +1,31 @@
+{
+  "name": "HackingMondays.github.io",
+  "version": "1.0.0",
+  "description": "Site de présentation des HackingMondays",
+  "main": "build.js",
+  "scripts": {
+    "start": "npm run build",
+    "build": "node build.js",
+    "release": "echo \"Not done yet\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NoobLad/HackingMondays.github.io.git"
+  },
+  "author": "HackingMondays",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/NoobLad/HackingMondays.github.io/issues"
+  },
+  "homepage": "https://github.com/NoobLad/HackingMondays.github.io",
+  "devDependencies": {
+    "jade": "^1.5.0",
+    "metalsmith": "^0.10.0",
+    "metalsmith-markdown": "^0.2.1",
+    "metalsmith-sass": "^0.3.0",
+    "metalsmith-templates": "^0.5.2",
+    "metalsmith-watch": "^0.1.1",
+    "node-bourbon": "^1.2.3",
+    "node-neat": "^1.3.0"
+  }
+}

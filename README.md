@@ -1,4 +1,6 @@
-HackingMondays
-========================
+HackingMondays.github.io
+------------------------
 
-Dépots de source des github pages des [HackingMondays](http://hackingmondays.github.io).
+Pour commencer à travailler : npm install
+
+puis pour tester : npm run build

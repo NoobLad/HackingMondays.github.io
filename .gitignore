@@ -1,5 +1,4 @@
-*.swp
-*.lock
 *.iml
 .idea
-_site
+out
+node_modules

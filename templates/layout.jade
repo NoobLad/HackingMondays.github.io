@@ -1,0 +1,30 @@
+doctype html
+html(lang="fr")
+    head
+        meta(charset='utf-8')
+        title HackingMondays - #{title}
+        link(rel="stylesheet", type="text/css", href="styles/main.css")
+    body
+        header
+            hgroup
+                h1 HackingMondays
+                h2 Venez coder de façon fun et dans la bonne humeur tous les lundis soir !
+            nav
+                ol
+                    li 
+                        a(href="index.html") News
+                    li 
+                        a(href="nous.html") Nous c'est qui ?
+                    li 
+                        a(href="rejoindre.html") Nous rejoindre
+                    li 
+                        a(href="https://github.com/HackingMondays") Sur Github
+        section
+            hgroup
+                h1
+                    block title
+            .content
+                block content
+        footer
+            span Hébergé sur 
+                a(href="https://pages.github.com/") GitHub Pages.

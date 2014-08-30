@@ -1,0 +1,42 @@
+@import "../../node_modules/node-bourbon/assets/stylesheets/bourbon";
+@import "../../node_modules/node-neat/assets/stylesheets/neat";
+
+header {
+  @include outer-container;
+
+  hgroup {
+    @include span-columns(12);
+    @include row(block);
+  }
+
+  nav {
+    @include span-columns(12);
+    @include row(block);
+
+    ol {
+      @include fill-parent;
+      @include row(block);
+
+      li {
+        @include span-columns(3)
+      }
+    }
+  }
+}
+
+section {
+  @include outer-container;
+
+  hgroup {
+    @include span-columns(12);
+    @include row(block);
+  }
+
+  .content {
+    @include span-columns(12);
+  }
+}
+
+footer {
+  @include outer-container;
+}
