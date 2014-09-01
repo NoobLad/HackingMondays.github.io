@@ -1,21 +1,35 @@
 @import "../../node_modules/node-bourbon/assets/stylesheets/bourbon";
 @import "../../node_modules/node-neat/assets/stylesheets/neat";
+@import "./mixins";
+
+html {
+  height: 100%;
+}
+
+body {
+  @include outer-container;
+  min-height: 100%;
+  background-color: mintcream;
+  color: midnightblue;
+}
 
 header {
-  @include outer-container;
+  @include span-columns(12);
 
   hgroup {
-    @include span-columns(12);
     @include row(block);
+    h2 {
+      font-size: 1em;
+    }
   }
 
   nav {
-    @include span-columns(12);
     @include row(block);
 
     ol {
       @include fill-parent;
       @include row(block);
+      text-align: center;
 
       li {
         @include span-columns(3)
@@ -25,18 +39,19 @@ header {
 }
 
 section {
-  @include outer-container;
-
+  @include span-columns(12);
+    
   hgroup {
-    @include span-columns(12);
     @include row(block);
   }
 
   .content {
-    @include span-columns(12);
+    @include row(block);
   }
 }
 
 footer {
-  @include outer-container;
+  @include span-columns(12);
+  font-style: italic;
+  padding-top: 30px;
 }
